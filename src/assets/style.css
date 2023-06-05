@@ -1,0 +1,40 @@
+#app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    justify-content: center;
+    display: block;
+    color: #2c3e50;
+    margin-top: 60px;
+  }
+
+  .logo{
+    width: 250;
+    height: 150;
+   }
+
+
+   .register input{
+    width: 500px;
+    margin: 20px;
+    padding: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 10px;
+    border-color: mediumslateblue;
+   }
+
+   .register button{
+    width: 250px;
+    margin: 20px;
+    padding: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 10px;
+    background-color:cornflowerblue;
+    color:white;
+    font-size: 15px;
+   }
