@@ -13,6 +13,9 @@
     <input type="password" v-model="password" placeholder="Enter password" />
 
     <button @click="signUp">Sign Up</button>
+    <p>
+        <router-link to="/login">Have an account? Login Here </router-link>
+    </p>
   </div>
 </template>
 
@@ -37,11 +40,21 @@ export default {
       if (result.status == 201) {
         alert("Sign Up Successful");
         localStorage.setItem("user-info", JSON.stringify(result.data));
-        this.$router.push({ name: "HomePage" });
+        this.$router.push({ name: "LoginPage" });
       }
     },
   },
-};
+  mounted() {
+
+    let user = localStorage.getItem("user-info");
+    if(user)
+    {   
+        alert("You are already signed up")
+        this.$router.push({ name: "HomePage" });
+
+    }
+  }
+}
 </script>
 
 <style>
