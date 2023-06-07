@@ -39,16 +39,6 @@ export default {
             if (result.status == 200 && result.data.length>0){
                 this.$router.push({name:"HomePage"});
             }
-            console.log(this.email, this.password);
-        }
-    },
-    mounted(){
-
-        let user = localStorage.getItem("user-info");
-
-        if(user){
-            alert("You are already logged in")
-            this.$router.push({ name: "HomePage" });
         }
     },
     

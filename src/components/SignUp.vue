@@ -50,7 +50,7 @@ export default {
     if(user)
     {   
         alert("You are already signed up")
-        this.$router.push({ name: "HomePage" });
+        this.$router.push({ name: "LoginPage" });
 
     }
   }

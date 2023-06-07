@@ -1,6 +1,9 @@
 import Home from "./components/Home.vue";
 import SignUp from "./components/SignUp.vue";
 import Login from "./components/Login.vue"
+import UpdateRest from "./components/UpdateRest.vue"
+import AddRest from "./components/AddRest.vue"
+
 import { createRouter, createWebHistory } from "vue-router";
 
 const routes = [
@@ -18,6 +21,17 @@ const routes = [
         name: "LoginPage",
         component: Login,
         path:"/login"
+    },
+    {
+        name: "UpdateRest",
+        component: UpdateRest,
+        path: '/update-restaurant/:id',
+        props: true,
+    },
+    {
+        name: "AddRest",
+        component: AddRest,
+        path:"/add-restaurant"
     },
 ];
 
